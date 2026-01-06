@@ -1,0 +1,20 @@
+/* Styles for Exercice 3 - responsive hamburger menu */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial;background:#f8f8f8;color:#222}
+header{position:relative;display:flex;align-items:center;justify-content:space-between;padding:1rem 1.5rem;background:#fff;border-bottom:1px solid #e6e6e6}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem;align-items:center}
+.main-nav a{text-decoration:none;color:#333;padding:.4rem .6rem;border-radius:4px}
+.main-nav a:hover,.main-nav a:focus{background:#f0f0f0}
+.nav-button-open{display:none;background:transparent;border:none;padding:0;margin:0;cursor:pointer}
+.nav-button-open img{width:28px;height:28px;display:block}
+
+/* Small screens: hide nav and show hamburger */
+@media (max-width:979px){
+  .main-nav{position:absolute;top:100%;right:0;left:0;background:#fff;overflow:hidden;max-height:0;opacity:0;transition:max-height .35s ease,opacity .35s ease}
+  .main-nav ul{flex-direction:row;justify-content:center;padding:.5rem 1rem;gap:.8rem}
+  .nav-button-open{display:block}
+  .main-nav.open{max-height:240px;opacity:1}
+}
+
+/* A little layout for the content */
+div{padding:2rem}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;/* Réinitialise toutes les marges par défaut des éléments. */
+    padding: 0;/* Réinitialise tous les espacements internes. */
+    box-sizing: border-box;/* Les dimensions incluent padding et border → facilite les layouts. */
+}
+
+.main{
+    display: flex;/* Active Flexbox pour le conteneur .main. */
+    flex-direction: row;/* Les éléments enfants sont alignés horizontalement (valeur par défaut). */
+    justify-content: space-around;/* Répartit l’espace : un espace égal autour de chaque élément. */
+}
+
+img{
+    position: fixed;/* L’image reste fixée à la même position même en scrollant la page. */
+}

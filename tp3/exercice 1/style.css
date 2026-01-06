@@ -1,0 +1,39 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial;
+  background:#f6f6f6;
+  color:#222;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+main{max-width:900px;padding:2rem;text-align:center}
+
+/* Bloc fixe 300 × 200 */
+.box{
+  width:300px;
+  height:200px;
+  background:#3498db; /* couleur par défaut */
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:600;
+  border-radius:6px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  margin:1.5rem auto;
+}
+
+/* Lorsque la largeur devient < 960px */
+@media (max-width: 960px){
+  .box{ background:#f39c12; /* couleur 2 */ }
+}
+
+/* Lorsque la largeur devient < 480px */
+@media (max-width: 480px){
+  .box{ background:#e74c3c; /* couleur 3 */ }
+}
+
+.hint{opacity:.9;font-size:.95rem}

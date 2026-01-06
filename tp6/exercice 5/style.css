@@ -1,0 +1,50 @@
+body {
+    background: #111; /* sombre pour faire ressortir la bannière */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.banner {
+    width: 728px;
+    height: 90px;
+    background: linear-gradient(120deg, #1a1a1a, #330000); /* noir + rouge sombre */
+    overflow: hidden;
+    position: relative;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+/* Texte animé : slide + fade-in */
+.text {
+    position: absolute;
+    left: -400px;
+    top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #ff0000;
+    animation: slideText 3s forwards;
+}
+
+@keyframes slideText {
+    0% { left: -400px; opacity: 0; }
+    100% { left: 30px; opacity: 1; }
+}
+
+/* Image animée : rotation lente + apparition */
+.image {
+    position: absolute;
+    right: -120px;
+    top: 5px;
+    width: 80px;
+    border-radius: 5px;
+    animation: rotateImage 3s forwards;
+}
+
+@keyframes rotateImage {
+    0% { right: -120px; transform: rotate(0deg); opacity: 0; }
+    100% { right: 20px; transform: rotate(360deg); opacity: 1; }
+}

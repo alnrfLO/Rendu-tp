@@ -1,0 +1,2 @@
+body { font-family: system-ui, sans-serif; padding:12px }
+canvas { display:block; margin:0 auto; background:#6cf; image-rendering: pixelated }

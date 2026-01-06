@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Exo5 — Mise à l'échelle d'images</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<section>
+			<h2>1) Image en taille réelle, centrée (canvas 1280×720)</h2>
+			<canvas id="c1" width="1280" height="720"></canvas>
+		</section>
+
+		<section>
+			<h2>2) Image qui occupe tout le canvas (étirée) (canvas 1280×720)</h2>
+			<canvas id="c2" width="1280" height="720"></canvas>
+		</section>
+
+		<section>
+			<h2>3) Image qui occupe tout le canvas sans déformation (recadrée si nécessaire) (canvas 1280×720)</h2>
+			<canvas id="c3" width="1280" height="720"></canvas>
+			<p class="explain" id="explain3"></p>
+		</section>
+
+		<section>
+			<h2>4) Ajuster le canvas pour afficher l'image en taille réelle à droite et en miroir à gauche</h2>
+			<canvas id="c4" width="1200" height="450"></canvas>
+			<p class="explain">Le canvas mesure 1200×450 : image originale 600×450 à droite, copie miroir 600×450 à gauche.</p>
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sections parallax */
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .bg1 {
+            background-image: url("https://cdn.shopify.com/s/files/1/0353/2144/6533/files/TOKYO_GHOUL_WALLPAPER_POUR_PC.jpg?v=1610209411");
+        }
+
+        .bg2 {
+            background-image: url("https://images.steamusercontent.com/ugc/996890173628327160/6380AE9E3A15FA0510D53A38BB9426E1F12E9670/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+        }
+
+        /* Contenu texte */
+        .content {
+            padding: 60px;
+            background: #f4f4f4;
+        }
+
+        h2 {
+            text-align: center;
+        }

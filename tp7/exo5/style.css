@@ -1,0 +1,7 @@
+body{font-family:Segoe UI,system-ui,Arial; margin:18px; color:#222}
+main{display:flex; flex-direction:column; gap:22px; max-width:1200px}
+section{background:#fff;border:1px solid #e0e0e0;padding:12px;border-radius:6px}
+h1{font-size:20px;margin:0 0 6px}
+h2{font-size:16px;margin:0 0 10px}
+canvas{display:block;background:#ddd; max-width:100%; height:auto}
+.explain{margin-top:8px;color:#444}

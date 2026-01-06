@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:#000000; /* départ noir */
+  color:#ffffff;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+main{max-width:900px;margin:0 auto;padding:2rem}
+.long{min-height:300vh;padding-bottom:4rem}
+.hint{opacity:.9;font-style:italic}
+.content p{line-height:1.6;margin:.8rem 0}

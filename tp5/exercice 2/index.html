@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Exercice 2 — Arrière-plan selon scroll</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Exercice 2 : noir → rouge selon le défilement</h1>
+    <p class="hint">Faites défiler pour voir la couleur passer de <code>#000000</code> à <code>#FF0000</code>.</p>
+
+    <section class="content">
+      <!-- Contenu long pour permettre le scroll -->
+      <div class="long">
+        <!-- Plusieurs paragraphes pour générer du scroll -->
+        <p>Début du document — couleur : <code>#000000</code></p>
+        <!-- Répéter du contenu -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in.</p>
+        <p>Scroll pour faire évoluer la couleur d'arrière-plan.</p>
+        <!-- More repeated filler -->
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Remplissage...</p>
+        <p>Fin du document — couleur : <code>#FF0000</code></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

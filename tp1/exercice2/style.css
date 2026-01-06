@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    color: #444;
+}
+
+a:link { color: #633; text-decoration: none; }
+a:visited { color: #966; text-decoration: none; }
+a:hover { text-decoration: underline; color: #300; }
+
+#page {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    height: 192px;
+    position: relative;
+    background: 
+        url('header.gif') no-repeat 0px 100%;
+    background-color: #966;
+}
+
+header p {
+    margin: 0;
+    padding-top: 75px; 
+    text-align: center;
+    color: #fff;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+}
+
+header ul {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header li a {
+    color: #fff !important; 
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+#content {
+    display: flex;
+    align-items: stretch;
+}
+
+
+aside {
+    width: 210px;
+    flex-shrink: 0;
+    order: -1;
+    text-align: left; 
+    padding: 40px 20px 0 20px; 
+    color: #555;
+    border-right: 1px solid #ddd;
+}
+
+section {
+    flex: 1;
+    padding: 40px 40px;
+}
+
+h1 {
+    color: #633;
+    font-size: 2.2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #999;
+    font-size: 1.1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: url('h2_ornament.jpg') no-repeat bottom left;
+    padding-bottom: 30px;
+}
+
+aside h3 {
+    color: #633;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+aside p {
+    font-size: 0.85em;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+section img {
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border: 6px solid #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+footer {
+    height: 192px; 
+    background-color: #333;
+    background-image: url('footer.gif');
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+    margin-top: 0; 
+}
+
+footer p {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    font-size: 0.75em;
+    color: #999;
+    margin: 0;
+}
+
+footer a { color: #c99; }

@@ -1,0 +1,6 @@
+body{font-family:system-ui,Segoe UI,Arial; padding:18px}
+.container{display:flex; gap:18px; align-items:flex-start}
+canvas{border:1px solid #ccc; background:#fafafa}
+.controls{display:flex; flex-direction:column; gap:8px}
+button{padding:8px 12px; font-size:14px}
+.status{margin-top:8px; color:#333}

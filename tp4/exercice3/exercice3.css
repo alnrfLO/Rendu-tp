@@ -1,0 +1,41 @@
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 90%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+/* Ligne d’en-tête */
+tr:first-child {
+  background-color: #444;
+  color: white;
+}
+
+/* --- Coloration par blocs avec nth-child --- */
+
+/* Pseudo-éléments (lignes 2 à 5) */
+tr:nth-child(n+2):nth-child(-n+5) {
+  background-color: #f88;  /* rouge/rose clair */
+}
+
+/* Sélecteurs d’attributs (lignes 6 à 12) */
+tr:nth-child(n+6):nth-child(-n+12) {
+  background-color: #bfffbf; /* vert clair */
+}
+
+/* Pseudo-classes de structure (lignes 13 à 24) */
+tr:nth-child(n+13):nth-child(-n+24) {
+  background-color: #aee5f7; /* bleu clair */
+}
