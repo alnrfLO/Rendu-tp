@@ -1,16 +1,72 @@
 document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search");
 
-    if (!searchInput) return;
+    if (searchInput) {
+        searchInput.addEventListener("keyup", () => {
+            const value = searchInput.value.toLowerCase();
+            const cards = document.querySelectorAll(".tp-card");
 
-    searchInput.addEventListener("keyup", () => {
-        const value = searchInput.value.toLowerCase();
-        const cards = document.querySelectorAll(".tp-card");
-
-        cards.forEach(card => {
-            const keywords = card.dataset.name;
-            card.style.display = keywords.includes(value) ? "block" : "none";
+            cards.forEach(card => {
+                const keywords = card.dataset.name;
+                card.style.display = keywords.includes(value) ? "block" : "none";
+            });
         });
+    }
+
+    // Modal preview when clicking a TP card
+    const modal = document.getElementById('tp-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalOpen = document.getElementById('modal-open');
+    const modalClose = modal && modal.querySelector('.modal-close');
+
+    const openModalFor = (card, href) => {
+        if (!modal) return;
+        modalTitle.textContent = card.querySelector('h3') ? card.querySelector('h3').textContent : '';
+        // Prefer a dedicated data-comment attribute; fall back to the <p> content
+        modalDesc.textContent = card.dataset.comment || (card.querySelector('p') ? card.querySelector('p').textContent : '');
+        modalOpen.setAttribute('href', href || (card.querySelector('a') ? card.querySelector('a').getAttribute('href') : '#'));
+        modal.setAttribute('aria-hidden', 'false');
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }; 
+
+    const closeModal = () => {
+        if (!modal) return;
+        modal.setAttribute('aria-hidden', 'true');
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('.tp-card').forEach(card => {
+        card.addEventListener('click', (e) => {
+            // Find href from inner link if available
+            const link = card.querySelector('a');
+            const href = link ? link.getAttribute('href') : '#';
+            openModalFor(card, href);
+        });
+
+        // Prevent inner link from navigating immediately; show modal instead
+        const innerLink = card.querySelector('a');
+        if (innerLink) {
+            innerLink.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                ev.stopPropagation();
+                openModalFor(card, innerLink.getAttribute('href'));
+            });
+        }
+    });
+
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    if (modal) {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    }
+
+    // Close with Escape
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
     });
 });
 

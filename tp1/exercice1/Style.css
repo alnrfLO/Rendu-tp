@@ -1,0 +1,136 @@
+body{
+  margin:0;
+  background-color: #333333;
+}
+ 
+main{
+  background-color: white;
+  width:90vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-bottom: 3px;
+  
+}
+ 
+ 
+header{
+  background-color: #cc0033;
+  color:white;
+  display:flex;
+ 
+}
+ 
+h1{
+  text-align: center;
+  margin:0;
+}
+ 
+h2{
+  text-align: center;
+  margin:0;
+  font-size: 1.1rem;
+}
+ 
+ 
+.gauche{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.droite{
+  width: 60%;
+}
+
+.gauche2{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.droite2{
+  width: 60%;
+}
+ 
+.droite div{
+  border: dashed 2px white ;
+  margin: 15px;
+  padding:15px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.droite item {
+  border: solid 2px white;    /* contour plein autour de chaque item */
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  flex: 1;                    /* pour qu’ils prennent chacun la même largeur */
+  text-align: center;
+}
+
+
+#deux{
+  display: inline-block;
+}
+ 
+table{
+  border-collapse: collapse;
+  width:calc(100% - 30px);
+  margin:15px;
+}
+ 
+th{
+  border:solid 1px black;
+  background-color: #CC0033;
+  color:white;
+  
+  
+}
+ 
+td{
+  border:solid 1px black;
+  text-align: center;
+  background-color:	#E0E0E0;
+}
+
+
+.droite2 {
+  margin: 15px;
+  border: dashed 2px white ;
+  border-radius: 5px;
+  justify-content: center ;
+  display: flex;
+}
+
+
+
+.item {
+    margin: 15px;
+    padding: 20px;
+    width: 15%;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    background: white;
+    color: #cc0033;
+    font-weight: bold;
+  }
+  
+  .left {
+    text-align: left;
+    padding-left: 45px;
+  }
+  
+
+  
+
+
+
+
+
+
+

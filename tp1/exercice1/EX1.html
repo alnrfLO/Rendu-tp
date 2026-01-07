@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exerice 1</title>
+<link href="Style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <main> 
+    <section>
+      <header>
+        <div class="gauche ">
+          <h1> FLEX CONTAINER </h1> 
+          <h2> (éléments parents) </h2> 
+        </div>
+        <div class="droite">
+          <div> <code>display: flex </code></div>
+          <div id="deux">display: inline-flex </div>
+        </div>
+
+      </header>
+      <div>
+        <table>
+          <tr>
+            <th> flex-direction</th>
+            <th> flex-wrap</th>
+            <th> flex-direction</th>
+            <th> flex-direction</th>
+            <th> flex-direction</th>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              row <br>
+              row-reverse <br>
+              column <br>
+              column-reverse <br>
+            </td>
+            <td rowspan="2">
+              no-wrap <br>
+              wrap  <br>
+              wrap-reverse <br>
+            </td>
+            <td>Axe principal (Main)</td>
+            <td colspan="2">Axe secondaire (Cross)</td>
+          </tr>
+          <tr>
+            <td rowspan="3"> 
+              flex-start <br>
+              center <br>
+              space-between <br>
+              space-around<br>
+              space-evenly<br>
+            </td>
+
+            <td rowspan="3"> 
+              flex-start <br>
+              flex-end <br>
+              center <br>
+              baseline <br>
+              stretch <br>
+            </td>
+
+            <td rowspan="3"> 
+              flex-start <br>
+              center <br>
+              space-between <br>
+              space-around<br>
+              stretch <br>
+
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"> Flex-flow</td>
+          </tr>
+          <tr>
+            <td colspan="2">flex-direction + flex-wrap</td>
+          </tr>
+
+        </table>
+      </div>
+    </section>
+    <section>
+      <header>
+        <div class="gauche2 ">
+          <h1> FLEX ITEMS </h1> 
+          <h2> (éléments enfants) </h2>
+        </div>
+        <div class="droite2">
+          <div class="item">ITEM 1</div>
+          <div class="item">ITEM 2</div>
+          <div class="item">ITEM 3</div>
+        </div>
+      </header> 
+      <div class="T2">
+      <table>
+        <tr>
+          <th>order</th>
+          <td colspan="2" class="left"> 0</td>
+        </tr>
+        <tr>
+          <th>flex-grow</th>
+          <td>0</td>
+          <td rowspan="3">flex : 0 1 auto</td>
+        </tr>
+        <tr>
+          <th>flex-shrink</th>
+          <td>1</td>
+          
+        </tr>
+        <tr>
+          <th>flex-basis</th>
+          <td>auto</td>
+        
+        </tr>
+        
+        <tr>
+          <th>align-self</th>
+          <td colspan="2" class="left"> auto</td>
+        </tr>
+
+      </table>
+
+    </div>
+     
+    </section>
+  </main>
+
+
+
+
+</body>
+
+</html>
