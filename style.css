@@ -76,6 +76,22 @@ header {
 }
 header p { opacity: 0.85; margin-top: 8px; }
 
+/* Header logo */
+.header-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  border: 2px solid rgba(255,255,255,0.06);
+}
+
+@media (max-width: 520px) {
+  .header-logo { width: 64px; height: 64px; margin-bottom: 8px; }
+}
+
 /* Navigation */
 nav {
   display: flex;
